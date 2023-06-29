@@ -1,51 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.flex-container{
+    display: flex;
+}
+
 .sidebar {
     height: 100vh;
     width: 250px;
-    background-color: beige;
+    // background-color: beige;
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
+    z-index: 1;
+    // float: left;
 }
 
 .main-content {
-    width: 825px;
+    width: 100vw;
     height: 100vh;
-    float: left;
-    // background-color: aliceblue;
+    margin-left: -250px;
+    // float: right;
     display: flex;
     justify-content: center;
+    align-items: center;
+    // float:right;
+    // position: absolute;
+    // top: 0px;
 }
 
 .headers {
-    margin-top: 5vh;
-    // background-color: gray;
     text-align: center;
+    margin-top: -8rem;
 }
 
 .headers h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: rgb(222, 58, 222);
 }
 
 .headers h3 {
-    margin-top: 25px;
+    margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
+.headers p {
+    margin-top: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    // justify-content: center;
+    // position: absolute;
+    // max-width: 250px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 650px;
+}
+
+
 .headshot {
-    height: 330px;
+    height: 450px;
     width: 330px;
-    border-radius: 50%;
+    border-radius: 15px;
     object-fit: cover;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -55,15 +75,18 @@
 
     .main-content {
         width: 100vw;
+        margin-left: 0px;
+
     }
+
 }
 
-.tagcloud {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin: auto;
-    width: 50%;
-}
+// .tagcloud {
+//     font-family: 'Poppins', sans-serif;
+//     font-size: 20px;
+//     margin: auto;
+//     width: 50%;
+// }
 
 .tagcloud--item:hover {
     color: #36454F;
