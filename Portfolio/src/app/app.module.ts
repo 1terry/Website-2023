@@ -4,12 +4,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ResumeComponent } from './resume/resume.component';
+import { OverviewComponent } from './overview/overview.component';
+import { MovingWavesComponent } from './moving-waves/moving-waves.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    HomepageComponent
+    HomepageComponent,
+    ResumeComponent,
+    OverviewComponent,
+    MovingWavesComponent
   ],
   imports: [
     BrowserModule,
