@@ -1,4 +1,39 @@
-.resume-container{
-    height: 100vh;
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.resume-header-container{
     width: 100vw;
+    background-color: black;
+    // margin-left: -0.335em;
+    text-align: center;
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+}
+
+.resume-container{
+    // height: 100vh;
+    // max-width: 100vw;
+    // margin-bottom: -5rem;
+    // display: flex;
+    max-width: 100vw;
+    height: 100vh;
+    align-items: center;
+    // background-color: #e899dc;
+    // background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+}
+
+.intro-description{
+    max-width: 43vw;
+    float: left
+}
+
+.intro-description h3{
+    font-weight: 300;
+}
+
+.technical-details{
+    float: right;
+    max-width: 56vw;
 }

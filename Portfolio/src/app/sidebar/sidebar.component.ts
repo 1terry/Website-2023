@@ -8,7 +8,7 @@ import { Component, OnInit, Directive, ViewChild, ElementRef, Renderer2 } from '
 export class SidebarComponent implements OnInit {
   @ViewChild('overview') overview: ElementRef;
   @ViewChild('about') about: ElementRef;
-  @ViewChild('experience') experience: ElementRef;
+  // @ViewChild('experience') experience: ElementRef;
   @ViewChild('resume') resume: ElementRef;
 
 
@@ -22,8 +22,8 @@ export class SidebarComponent implements OnInit {
     this.renderer.removeClass(this.overview.nativeElement, 'default');
     this.renderer.removeStyle(this.about.nativeElement, 'text-decoration');
     this.renderer.removeStyle(this.about.nativeElement, 'color');
-    this.renderer.removeStyle(this.experience.nativeElement, 'text-decoration');
-    this.renderer.removeStyle(this.experience.nativeElement, 'color');
+    // this.renderer.removeStyle(this.experience.nativeElement, 'text-decoration');
+    // this.renderer.removeStyle(this.experience.nativeElement, 'color');
     this.renderer.removeStyle(this.resume.nativeElement, 'text-decoration');
     this.renderer.removeStyle(this.resume.nativeElement, 'color');
     this.renderer.removeStyle(this.overview.nativeElement, 'text-decoration');
@@ -50,7 +50,7 @@ export class SidebarComponent implements OnInit {
 
   toExperience() {
     console.log('Experience');
-    this.changeUnderline(this.experience);
+    // this.changeUnderline(this.experience);
   }
   toResume() {
     console.log('Resume');
