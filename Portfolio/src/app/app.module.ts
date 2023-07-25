@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ResumeComponent } from './resume/resume.component';
 import { OverviewComponent } from './overview/overview.component';
 import { MovingWavesComponent } from './moving-waves/moving-waves.component';
+import { BubbleBackgroundComponent } from './bubble-background/bubble-background.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MovingWavesComponent } from './moving-waves/moving-waves.component';
     HomepageComponent,
     ResumeComponent,
     OverviewComponent,
-    MovingWavesComponent
+    MovingWavesComponent,
+    BubbleBackgroundComponent
   ],
   imports: [
     BrowserModule,
