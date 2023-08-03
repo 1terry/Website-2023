@@ -1,9 +1,8 @@
 body {
-    background: #1a1e23;
     margin: 0;
   }
   
-  $bubble-count: 15;
+  $bubble-count: 25;
   $sway-type: "sway-left-to-right", "sway-right-to-left";
   
   @function random_range($min, $max) {
@@ -19,9 +18,13 @@ body {
   .bubbles {
     position: absolute;
     width: 100vw;
-    height: 120vh;
+    // height: 120vh;
+    height: 220vh;
+    left: 0vw;
     top: 80vh;
     overflow: hidden;
+    // z-index: -50;
+
   }
   
   .bubble {
@@ -50,7 +53,7 @@ body {
       &:nth-child(#{$i}) {
         --bubble-left-offset: #{random_range(0vw, 100vw)};
         --bubble-radius: #{random_range(1vw, 5vw)};
-        --bubble-float-duration: #{random_range(6s, 12s)};
+        --bubble-float-duration: #{random_range(10s, 15s)};
         --bubble-sway-duration: #{random_range(4s, 6s)};
         --bubble-float-delay: #{random_range(0s, 4s)};
         --bubble-sway-delay: #{random_range(0s, 4s)};
@@ -61,7 +64,11 @@ body {
   
   @keyframes float-up {
     to {
-      transform: translateY(-175vh);
+      // transform: translateY(-175vh);
+      transform: translateY(-355vh);
+      opacity: 0;
+      // transition: visibility 0s 2s, opacity 2s linear;
+      transition: visibility 0s 6s, opacity 6s linear;
     }
   }
   

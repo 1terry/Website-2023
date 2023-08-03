@@ -1,5 +1,6 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
 }
 
 .resume-header-container{
@@ -28,19 +29,22 @@
     height: 100vh;
     margin-left: -0.5em;
     background-image: linear-gradient(#015871, rgb(29, 53, 125));
+
 	height: 100vh;
-    color: white;
+    // color: white;
     // align-items: center;
     // background-color: #e899dc;
-    // background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+     // Temporary fix for hover effect
+    // margin-top: -100vh;
 }
-
 
 
 .section-header{
     font-size: 3rem;
     font-weight: 500;
-    margin-top: 20px;
+    color: rgb(255, 153, 0);
+    text-decoration: underline;
+    text-underline-offset: 14px;
 }
 
 .experience-header{
@@ -49,8 +53,8 @@
 }
 
 .intro-description{
-    max-width: 80vw;
-    margin-left: 15vw;
+    max-width: 85vw;
+    margin-left: 12.5vw;
     // align-items: center;
     // text-align: center;
 }
@@ -69,8 +73,6 @@
 }
 
 .projects-header{
-    margin:auto;
-    text-align: center;
     align-items: center;
     margin-right: 10vw;
 }
@@ -87,4 +89,5 @@
 // }
 
 // https://codepen.io/josetxu/pen/WNprEbw
-// https://codepen.io/josetxu/pen/WNprEbw
+
+// https://www.sliderrevolution.com/resources/css-cards/

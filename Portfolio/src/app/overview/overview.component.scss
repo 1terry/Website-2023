@@ -7,20 +7,25 @@
     align-items: center;
     // This is because of resume, can remove later once formatting is fixed
     margin-left: -0.9em;
-    background:radial-gradient(ellipse at center, rgb(225, 191, 159) 0%, rgb(237, 196, 163)35%, #4eced5 70%);
+    // background:radial-gradient(ellipse at center, rgb(225, 191, 159) 0%, rgb(237, 196, 163)35%, #4eced5 70%);
+    background: #DAE2F8;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, #d78585, #bbc2d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
 }
 
 .headers {
     text-align: center;
-    margin-top: -8rem;
+    margin-top: -10rem;
 }
 
 .headers h1 {
     font-family: 'Inter', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.75rem;
-    color: rgb(64, 98, 235);
+    color:#6c6b6b;
     // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
 }
 
@@ -28,12 +33,12 @@
     margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.75rem;
-    font-weight: 100;
+    font-weight: 300;
     color: rgb(0, 0, 0);
 }
 
 .headers p {
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1.5rem;
@@ -61,3 +66,4 @@
     margin-top: 1rem;
    }
 }
+

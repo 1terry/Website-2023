@@ -33,8 +33,8 @@ export class SidebarComponent implements OnInit {
   changeUnderline(selected: ElementRef) {
     this.reset();
     this.renderer.setStyle(selected.nativeElement, 'text-decoration', 'underline');
-    this.renderer.setStyle(selected.nativeElement, 'text-decoration-color', 'red');
-    this.renderer.setStyle(selected.nativeElement, 'color', 'red');
+    this.renderer.setStyle(selected.nativeElement, 'text-decoration-color', 'rgb(255, 243, 110)');
+    this.renderer.setStyle(selected.nativeElement, 'color', 'rgb(255, 243, 110)');
   }
 
   toOverview() {
