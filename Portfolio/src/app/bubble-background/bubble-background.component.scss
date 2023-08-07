@@ -1,5 +1,6 @@
 body {
     margin: 0;
+
   }
   
   $bubble-count: 25;
@@ -19,16 +20,22 @@ body {
     position: absolute;
     width: 100vw;
     // height: 120vh;
-    height: 220vh;
+    height: 200vh;
     left: 0vw;
-    top: 80vh;
+    top: 100vh;
     overflow: hidden;
-    // z-index: -50;
+
+    // ISSUE LIES IN Z INDEX
+
+    z-index: -1;
+    // background-image: linear-gradient(rgb(29, 53, 125), rgb(9, 21, 59));
+    background-image: linear-gradient(#015871, rgb(9, 21, 59));
 
   }
   
   .bubble {
     position: absolute;
+    // position: relative;
     left: var(--bubble-left-offset);
     bottom: -75%;
     display: block;
@@ -53,6 +60,7 @@ body {
       &:nth-child(#{$i}) {
         --bubble-left-offset: #{random_range(0vw, 100vw)};
         --bubble-radius: #{random_range(1vw, 5vw)};
+        // Play with float duration ranges to adjust where bubbles dissapear
         --bubble-float-duration: #{random_range(10s, 15s)};
         --bubble-sway-duration: #{random_range(4s, 6s)};
         --bubble-float-delay: #{random_range(0s, 4s)};
@@ -65,10 +73,11 @@ body {
   @keyframes float-up {
     to {
       // transform: translateY(-175vh);
-      transform: translateY(-355vh);
+      transform: translateY(-335vh);
       opacity: 0;
       // transition: visibility 0s 2s, opacity 2s linear;
-      transition: visibility 0s 6s, opacity 6s linear;
+      transition: visibility 0s 4.5s, opacity 4.5s linear;
+      // visibility used to be 6s
     }
   }
   
