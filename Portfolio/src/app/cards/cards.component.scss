@@ -1,11 +1,11 @@
-body { font-family: sans-serif; }
-
 .scene {
-  max-width: 400px;
-  max-height: 660px;
+  // max-width: 400px;
+  // max-height: 660px;
   min-width: 300px;
   min-height: 460px;
   // margin: 40px 0;
+  width: 21vw;
+  height: 70vh;
   perspective: 600px;
   // display: flex;
 }
@@ -37,18 +37,69 @@ body { font-family: sans-serif; }
   position: absolute;
   width: 100%;
   height: 100%;
-  color: white;
-  font-weight: bold;
+  color: rgb(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
+.jd{
+  background-image: url("/src/assets/JD_logo.png");
+  background-size: cover;
+  // background: rgba(255, 0, 0, 0.4);
+}
+
+img{
+  width: 90%;
+  margin-bottom: 10px;
+  top: 50%;
+  position: absolute;
+  // margin-right: 5%;
+  // margin-bottom: 40%;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 300;
+  color: #e76c6c;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+.bottom-text{
+  position: absolute;
+  bottom: 15px;
+}
+
+.company{
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.date{
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+h3{
+  font-weight: 100;
+}
+
 .card__face--front {
-  background: rgba(130, 130, 130, 0.4);
+  // background: rgb(255, 255, 255);
+  background: #DAE2F8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top, #d78585, #bbc2d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  border-radius: 20px;
   // z-index: 5;
 }
 
 .card__face--back {
+  border-radius: 20px;
 
   margin-left: -40px;
   background: rgba(130, 130, 130, 0.4);
