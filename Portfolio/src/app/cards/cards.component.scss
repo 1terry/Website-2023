@@ -1,8 +1,9 @@
+
 .scene {
   // max-width: 400px;
-  // max-height: 660px;
+  max-height: 400px;
   min-width: 300px;
-  min-height: 460px;
+  min-height: 400px;
   // margin: 40px 0;
   width: 21vw;
   height: 70vh;
@@ -10,9 +11,19 @@
   // display: flex;
 }
 
+.date{
+  font-style: italic;
+}
+
+.job-title{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
 .cards{
   display: flex;
   width: 80vw;
+  margin-left: 10vw;
   // background-color: black;
   // position: absolute;
   justify-content: space-between;
@@ -73,9 +84,12 @@ h2{
 }
 
 .company{
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 200;
+  margin-top: 15px;
+  color: rgb(199, 24, 24);
+  // background-color: red;
 }
 
 .date{
@@ -102,6 +116,6 @@ h3{
   border-radius: 20px;
 
   margin-left: -40px;
-  background: rgba(130, 130, 130, 0.4);
+  background: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
