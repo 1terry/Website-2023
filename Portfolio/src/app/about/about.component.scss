@@ -1,10 +1,13 @@
 .about-container{
     font-family: 'Inter', sans-serif;
 
-    max-width: 100vw;
+    max-width: 83.5vw;
+    margin-left: 10vw;
+
     // Temporary fix for disable hover
     // margin-top: 100vh;
     height: 100vh;
+    margin-top: -44vh;
     // background-image: linear-gradient(#015871, rgb(29, 53, 125));
     // background-image: linear-gradient(rgb(29, 53, 125), rgb(9, 21, 59));
 
@@ -12,7 +15,6 @@
 }
 
 .about-overview{
-    margin-left: 260px;
     // width: 80%;
     height: 70%;
     border-radius: 25px;
@@ -59,4 +61,12 @@ ul, li {
     // float: left;
     // background-color: red;
     // height: 90vh;
+}
+
+@media screen and (max-width: 800px) {
+  
+    .about-container{
+      margin-top: 100vh;  
+    }
+
 }
