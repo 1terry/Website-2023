@@ -6,16 +6,18 @@
 
     // Temporary fix for disable hover
     // margin-top: 100vh;
-    height: 100vh;
+    // height: 100vh;
     margin-top: -44vh;
     // background-image: linear-gradient(#015871, rgb(29, 53, 125));
     // background-image: linear-gradient(rgb(29, 53, 125), rgb(9, 21, 59));
 
+    // overflow-y: hidden;
     // color: white;
 }
 
 .about-me{
-
+    width: 80%;
+  
 }
 
 .description{
