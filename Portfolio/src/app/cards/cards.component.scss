@@ -39,6 +39,7 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  border-radius: 20px;
 }
 
 .card.is-flipped {
@@ -117,7 +118,7 @@ h3{
 .card__face--back {
   border-radius: 20px;
 
-  margin-left: -40px;
+  // margin-left: -40px;
   background: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
