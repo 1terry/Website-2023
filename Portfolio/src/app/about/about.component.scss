@@ -14,59 +14,15 @@
     // color: white;
 }
 
-.about-overview{
-    // width: 80%;
-    height: 70%;
-    border-radius: 25px;
-    margin-right: 25px;
-    background-color: rgba(225, 217, 202, 0.187);
+.about-me{
+
 }
 
-h1{
-    font-size: 3rem;
+.description{
+    max-width: 500px;
+
 }
 
-.skills{
-    align-items: center;
-    text-align: center;
-    // float: right;
-    // height: 90vh;
-    // background-color: wheat;
-}
-
-.skills-title{
-    margin-top: 15px;
-}
-
-ul, li {    
-    display:inline-block;
-    margin: 10px;
-    background-color: bisque;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.about-title{
-    color: white;
-    padding-top: 10px;
-}
-
-.about-text{
-    padding-top: 25px;
-}
-
-.about{
-    text-align: center;
-
-    // float: left;
-    // background-color: red;
-    // height: 90vh;
-}
-
-@media screen and (max-width: 800px) {
-  
-    .about-container{
-      margin-top: 100vh;  
-    }
-
+.pictures{
+    width: 30%;
 }
