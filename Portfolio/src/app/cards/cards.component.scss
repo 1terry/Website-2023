@@ -1,33 +1,50 @@
 
 .scene {
-  // max-width: 400px;
   max-height: 400px;
   min-width: 300px;
   min-height: 400px;
-  // margin: 40px 0;
   width: 21vw;
   height: 70vh;
   perspective: 600px;
-  // display: flex;
+}
+
+.container{
+  perspective: 600px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .date{
   font-style: italic;
 }
 
+.team{
+  font-size: 1.6rem;
+}
+
 .job-title{
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 200;
+  margin-top: 4%;
+  margin-left: 3%;
+}
+
+.bottom-section{
+  position: absolute;
+  top: 50%;
+}
+
+.bottom-text{
+  margin-top: 55px;
+  margin-left: -5px;
 }
 
 .cards{
   display: flex;
   width: 80vw;
   margin-left: 10vw;
-  // background-color: black;
-  // position: absolute;
   justify-content: space-between;
-  // justify-content: ;
   display: flex;
   flex-wrap: wrap;
 }
@@ -38,7 +55,6 @@
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
-  position: relative;
   border-radius: 20px;
 }
 
@@ -51,48 +67,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  color: rgb(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.jd{
-  background-image: url("/src/assets/JD_logo.png");
-  background-size: cover;
-  // background: rgba(255, 0, 0, 0.4);
-}
-
-img{
-  width: 90%;
-  margin-bottom: 10px;
-  top: 50%;
-  position: absolute;
-  // margin-right: 5%;
-  // margin-bottom: 40%;
-}
-
-h1{
-  font-size: 3rem;
-  font-weight: 300;
-  color: #000000;
-}
-
-h2{
-  font-size: 2rem;
-}
-
-.bottom-text{
-  position: absolute;
-  bottom: 15px;
-}
-
 .company{
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 10px;
   font-weight: 200;
-  margin-top: 15px;
+  margin-top: 10px;
   color: rgb(199, 24, 24);
-  // background-color: red;
 }
 
 .date{
@@ -104,14 +88,28 @@ h3{
   font-weight: 100;
 }
 
-.card__face--front {
-  // background: rgb(255, 255, 255);
+.top-section{
   background: #DAE2F8;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to top, #d78585, #bbc2d4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50%;
+  width: 100%;
+  position: absolute; 
+  left: 0;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card__face--front {
+  // background: rgb(255, 255, 255);
+  // background: #DAE2F8;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: -webkit-linear-gradient(to top, #d78585, #bbc2d4);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  border-radius: 20px;
+  // border-radius: 20px;
   // z-index: 5;
 }
 
@@ -127,4 +125,39 @@ h3{
   .scene{
     margin-top: 10vh;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	background-color: #f5f7fa;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
 }
