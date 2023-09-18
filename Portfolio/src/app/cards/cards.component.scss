@@ -1,8 +1,10 @@
 
+
 .scene {
   // max-height: 400px;
   // max-width: 370px;
   // min-width: 300px;
+  display: flex;
   // min-height: 400px;
   max-width: 350px;
   max-height: 400px;
@@ -14,7 +16,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-
 }
 
 .date{
@@ -83,12 +84,13 @@
   // padding: 20px;
   position: absolute;
   // margin-top: -0px;
-  top: 0px;
+  // top: 0px;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 
 .company{
   font-size: 2.3rem;
@@ -121,17 +123,6 @@ h3{
   border-top-left-radius: 20px;
 }
 
-.card__face--front {
-  // background: rgb(255, 255, 255);
-  // background: #DAE2F8;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to top, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: -webkit-linear-gradient(to top, #d78585, #bbc2d4);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to top, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  // border-radius: 20px;
-  // z-index: 5;
-}
-
 .card__face--back {
   transform: rotateY(180deg);
 }
@@ -142,21 +133,20 @@ h3{
   }
 }
 
-
-.flex-container{
-  display: flex;
-  width: 90vw;
-  margin-left: 10vw;
-    justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
+.container-2{
+  position:absolute;
+  left: 30vw;
+  top: 0;
+  width: 350px;
 }
 
 
-
-
-
-
+.container-3{
+  position:absolute;
+  left: 60vw;
+  top: 0;
+  width: 350px;
+}
 
 
 
