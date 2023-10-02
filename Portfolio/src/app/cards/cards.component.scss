@@ -1,14 +1,11 @@
 
 
 .scene {
-  // max-height: 400px;
-  // max-width: 370px;
-  // min-width: 300px;
   display: flex;
   // min-height: 400px;
   max-width: 350px;
   max-height: 400px;
-  perspective: 600px;
+  perspective: 650px;
 }
 
 .container{
@@ -17,6 +14,24 @@
   width: 100%;
   height: 100%;
 }
+
+.container-2{
+  position:absolute;
+  left: 30vw;
+  top: 0;
+  width: 350px;
+  perspective: 650px;
+}
+
+.container-3{
+  position:absolute;
+  left: 60vw;
+  top: 0;
+  width: 350px;
+  perspective: 650px;
+
+}
+
 
 .date{
   font-style: italic;
@@ -43,14 +58,6 @@
   margin-left: -5px;
 }
 
-.cards{
-  // display: flex;
-  // width: 80vw;
-  // margin-left: 10vw;
-  // justify-content: space-between;
-  // display: flex;
-  // flex-wrap: wrap;
-}
 
 .card {
   width: 100%;
@@ -60,6 +67,7 @@
   cursor: pointer;
   
   // border-radius: 20px;
+  border: 0;
   background:transparent;
 }
 
@@ -133,20 +141,6 @@ h3{
   }
 }
 
-.container-2{
-  position:absolute;
-  left: 30vw;
-  top: 0;
-  width: 350px;
-}
-
-
-.container-3{
-  position:absolute;
-  left: 60vw;
-  top: 0;
-  width: 350px;
-}
 
 
 
