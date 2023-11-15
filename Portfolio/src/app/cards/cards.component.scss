@@ -56,6 +56,8 @@
   top: 0;
   left: 0;
   background-color: white;
+  border-radius: 10px;
+
 }
 
 .card.is-flipped {
@@ -82,10 +84,6 @@ h3{
   height: 50%;
   width: 100%;
   position: absolute; 
-  left: 0;
-  top: 0;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .card__face--back {
@@ -96,12 +94,12 @@ h3{
 .testimonial-card .card-up {
   height: 120px;
   overflow: hidden;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
 }
 
 .aqua-gradient {
   background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .testimonial-card .avatar {
