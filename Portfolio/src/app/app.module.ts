@@ -11,6 +11,7 @@ import { BubbleBackgroundComponent } from './bubble-background/bubble-background
 import { CardsComponent } from './cards/cards.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectsComponent } from './projects/projects.component';
     BubbleBackgroundComponent,
     CardsComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
